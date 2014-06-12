@@ -83,7 +83,13 @@ class PaintPanel extends JPanel implements MouseListener, MouseMotionListener {
             drawCurrentShape(g2);
         }
     }
+    //========================================================= drawCurrentShape
+    private void drawCurrentShape(Graphics2D g2) {
+        g2.setColor(_color);            // Set the color.
+        _shape.draw(g2, _start, _end);  // Draw the shape.
+    }
     
+    /*
     //========================================================= drawCurrentShape
     private void drawCurrentShape(Graphics2D g2) {
         //... Draws current shape on a graphics context, either
@@ -110,6 +116,7 @@ class PaintPanel extends JPanel implements MouseListener, MouseMotionListener {
                 break;
         }
     }
+    */
     
     //============================================================= mousePressed
     public void mousePressed(MouseEvent e) {

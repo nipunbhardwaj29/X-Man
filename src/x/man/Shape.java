@@ -6,16 +6,19 @@
 
 package x.man;
 
+import java.awt.Graphics2D;
+import java.awt.Point;
+
 /**
  *
  * @author nipun
  */
-public enum Shape { RECTANGLE, OVAL, LINE }
- //========================================================= drawCurrentShape
-    private void drawCurrentShape(Graphics2D g2) {
-        g2.setColor(_color);            // Set the color.
-        _shape.draw(g2, _start, _end);  // Draw the shape.
-    }
+//public enum Shape { RECTANGLE, OVAL, LINE }
+// //========================================================= drawCurrentShape
+//    private void drawCurrentShape(Graphics2D g2) {
+//        g2.setColor(_color);            // Set the color.
+//        _shape.draw(g2, _start, _end);  // Draw the shape.
+//    }
 
 ////////////////////////////////////////////////////////////////////////// Shape
 public enum Shape {
